@@ -1,13 +1,13 @@
 
 .hero {
   background: linear-gradient(rgba(9, 50, 110, 0.154), rgba(23, 26, 65, 0.154)),
-  url('/images/header/bg.png') no-repeat center center;
+  url('../images/header/bg.png') no-repeat center center;
   background-size: cover;
 
   // media mob
   @media screen and (min-width: 320px) and (max-width: 470px) {
     background: linear-gradient(rgba(9, 50, 110, 0.154), rgba(23, 26, 65, 0.154)),
-      url('../../images/header/bgmob.jpg') no-repeat center center;
+      url('../images/header/bgmob.jpg') no-repeat center center;
     background-size: contain;  
   }
 }
