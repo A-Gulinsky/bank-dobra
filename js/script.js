@@ -3,6 +3,10 @@ const mobileBtn = document.querySelector('.navbar__btn')
 const navBarMenu = document.querySelector('.navbar__mobile-menu')
 const btnClose = document.querySelector('.navbar__btn-close')
 
+const mobileItemLink = document.querySelectorAll('.mobile__item-link')
+console.log(mobileItemLink)
+
+
 mobileBtn.addEventListener(`click`, mobileMenu)
 
 function mobileMenu() {
