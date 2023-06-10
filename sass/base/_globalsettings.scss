@@ -1,0 +1,52 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+
+  @media screen and (min-width:900px) and (max-width: 1199px) {
+    min-width: 870px;
+    max-width: 1169px;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 869px) {
+    min-width: 300px;
+    max-width: 839px;
+  }
+}
+
+/* Налаштунок фото */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Глобальне скидання */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Налаштування для списків */
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

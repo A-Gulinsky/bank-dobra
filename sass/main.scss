@@ -1,0 +1,20 @@
+// Глобальне налаштування
+@import './base/normalize.scss';
+@import './base/globalsettings';
+
+// header
+@import './components/header.scss';
+// hero
+@import './components/hero';
+// about us
+@import './components/about-us';
+// features
+@import './components/features';
+// info
+@import './components/info';
+
+// footer
+@import './components/footer';
+
+// mobile menu
+@import './components/mobile-menu';

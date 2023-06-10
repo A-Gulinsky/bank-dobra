@@ -1,0 +1,189 @@
+
+.info {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: rgba(19, 19, 19, 0.09);
+}
+
+.info__container {
+}
+
+.info__title-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  margin-bottom: 38px;
+  padding-bottom: 2px;
+}
+
+.info__title {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 42px;
+}
+
+.info__title-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.info__item-link {
+  text-decoration: none;
+}
+
+.info__list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+  margin-bottom: 50px;
+
+  // media mob/tab/desk
+  @media screen and (max-width: 979px) {
+    flex-wrap: wrap;
+  }
+}
+
+.info__item {
+  width: 300px;
+
+  padding: 10px;
+
+  background-color: rgba(242, 242, 242, 0.909);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 2px #1c85fc;
+
+  transition: 350ms;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.494);
+    border-left: 1px solid #1c85fc;
+    border-top: 1px solid #1c85fc;
+  }
+}
+
+.info__item-box {
+  text-align: center;
+}
+
+.info__item-img {
+  width: 280px;
+  height: 350px;
+
+  box-shadow: 0px 0px 5px 2px rgb(54, 138, 255);
+  border-radius: 10px;
+}
+
+.info__item-icon {
+  margin-bottom: 20px;
+
+  fill: rgb(109, 175, 255);
+  filter: drop-shadow(0px 0px 20px #1c85fc);
+}
+
+.info__item-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  text-align: center;
+  color: #1c85fc;
+}
+
+.info__contact-list {
+}
+
+.info__contact-item {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  &--first-child {
+    width: 500px;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px ;
+
+    box-shadow: 0px 0px 5px 2px #1c85fc;
+    border-radius: 10px;
+
+    @media screen and (max-width: 530px) {
+      width: 350px;
+
+      font-size: 14px;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 420px) {
+      width: 280px;
+      gap: 0;
+
+      font-size: 12px;
+      text-align: center;
+    }
+  }
+}
+
+
+
+.info__contact-text {
+  font-family: 'IBM Plex Serif', serif;
+  color: #1a1a1ab7;
+}
+
+.info__contact-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 35px;
+  height: 35px;
+
+  background-color: #1c50fc;
+  border-radius: 50%;
+
+  transition: 150ms;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+
+  @media screen and (max-width: 530px) {
+    width: 55px;
+  }
+}
+
+.info__contact-icon {
+  fill: white;
+}
+
+.info__contact-button {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 30px;
+
+  color: white;
+
+  background-color: rgb(28, 133, 252);
+  border-radius: 10px;
+  border: 1px solid transparent;
+
+  transition: 150ms;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus{
+    transform: scale(1.01);
+    box-shadow: 0px 0px 10px rgb(37, 134, 251);
+  }
+}
