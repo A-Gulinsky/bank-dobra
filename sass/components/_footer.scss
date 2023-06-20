@@ -45,10 +45,6 @@
   display: flex;
   align-items: center;
   gap: 10px;
-
-  @media screen and (max-width: 650px){
-    justify-content: center;
-  }
 }
 
 .address__item-icon {

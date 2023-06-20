@@ -1,0 +1,190 @@
+.modal__info {}
+
+.modal__logo {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal__img {
+  width: 40px;
+  height: 40px;
+}
+
+.modal__info-list {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  cursor: default;
+
+  @media screen and (orientation: landscape) and (max-height: 365px) {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    gap: 5px;
+  }
+}
+
+.modal__info-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.modal__info-title {
+  font-family: "Caveat", cursive;
+  font-size: 30px;
+  color: rgba(28, 28, 28, 0.829);
+  white-space: nowrap;
+}
+
+.modal__info-details {
+  position: relative;
+
+  font-family: "Roboto Condensed", sans-serif;
+  white-space: nowrap;
+  text-align: center;
+  
+  color: #1c85fc;
+
+  &--copy {
+    
+    cursor: pointer;
+
+    &::before {
+      content: '(UAH)';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: -40px;
+
+      color: rgba(28, 28, 28, .829);
+    }
+
+    &::after {
+      content: '№';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -20px;
+      font-size: 16px;
+
+      color: rgba(28, 28, 28, .829);;
+    }
+
+    &:focus,
+    &:hover {
+      color: #14b4f3;
+    }
+  }
+
+  @media screen and (max-width: 390px) {
+    font-size: 12px;
+  }
+}
+
+.modal__info-detail-copy-box {
+}
+
+.info-copy-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  margin-top: 10px;
+
+  @media screen and (orientation: landscape) and (max-height: 365px) {
+    margin-top: 5px;
+  }
+}
+
+.info-copy-text {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  color: rgba(28, 28, 28, .829);
+  white-space: nowrap;
+}
+
+.info-copy-icon {
+  width: 16px;
+  height: 16px;
+
+  rotate: -180deg;
+
+
+  animation-name: animIcon;
+  animation-duration: 1200ms;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+}
+
+.modal__info-payment-receiver {}
+
+.modal__additional-information-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  cursor: default;
+
+  @media screen and (max-width: 684px) {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  @media screen and (orientation: landscape) and (max-height: 350px) {
+    gap: 5px;
+  }
+}
+
+.modal__additional-information-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  @media screen and (max-width: 684px) {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  @media screen and (orientation: landscape) and (max-height: 350px) {
+    gap: 3px;
+  }
+}
+
+.modal__additional-information-title {
+  font-family: "Caveat", cursive;
+  font-size: 24px;
+  color: rgba(28, 28, 28, 0.829);
+  white-space: nowrap;
+}
+
+.modal__additional-information-text {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #1c85fc;
+  white-space: nowrap;
+}
+
+@keyframes animIcon {
+  0% {
+    transform: translateY(-3px);
+  }
+
+  100% {
+    transform: translateY(3px);
+  }
+}
