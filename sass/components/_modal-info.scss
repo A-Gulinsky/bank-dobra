@@ -57,6 +57,12 @@
   
   color: #1c85fc;
 
+  &--first-child {
+    @media screen and (max-width: 460px) {
+      font-size: 14px;
+    }
+  }
+
   &--copy {
     
     cursor: pointer;
