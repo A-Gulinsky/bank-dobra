@@ -530,7 +530,7 @@ ul {
 @media screen and (max-width: 460px) {
   .hero__title {
     font-size: 26px;
-    width: 250px;
+    width: 280px;
   }
 }
 
