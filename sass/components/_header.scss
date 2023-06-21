@@ -35,10 +35,22 @@
   font-family: 'Caveat', cursive;
   font-size: 34px;
   color: rgba(41, 41, 41, 0.813);
+
+  @media screen and (max-width: 440px) {
+    font-size: 24px;
+  }
+
+  @media screen and (max-width: 332px) {
+    font-size: 20px;
+  }
 }
 
 .site-nav {
   margin-left: 100px;
+
+  @media screen and (min-width: 900px) and (max-width: 990px) {
+    margin-left: auto;
+  }
 
   // media mob/tab
   @media screen and (max-width: 899px) {
@@ -46,7 +58,7 @@
   }
 
   // media mob/tab
-  @media screen and (max-width: 820px) {
+  @media screen and (max-width: 920px) {
     display: none;
   }
 }
@@ -103,10 +115,34 @@
   }
 }
 
+.change-lang {
+  display: block;
+  margin-left: auto;
+  margin-right: 30px;
+
+  border: 2px solid #1c85fc;
+  border-radius: 6px;
+
+  font-family: "IBM Plex Serif", serif;
+  color: #4d4e50;;
+
+  outline: transparent;
+  transition: 250ms;
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 10px #2586fb;
+  }
+
+  @media screen and (max-width: 390px) {
+    margin-right: 10px;
+  }
+}
+
+
 .header-btn {
   display: block;
   padding: 10px 15px;
-  margin-left: auto;
 
   color: white;
 
@@ -128,7 +164,7 @@
     margin-left: 0;
   }
 
-  @media screen and (max-width: 820px) {
+  @media screen and (max-width: 920px) {
     display: none;
   }
 }
